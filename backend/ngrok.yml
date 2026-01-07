@@ -1,0 +1,10 @@
+version: "2"
+authtoken_from_env: true
+tunnels:
+  shroomify:
+    proto: http
+    addr: 5000
+    subdomain: reliably-one-kiwi
+    inspect: false
+    bind_tls: true
+    host_header: "reliably-one-kiwi.ngrok-free.app"
