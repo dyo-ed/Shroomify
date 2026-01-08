@@ -83,33 +83,6 @@ export PORT=5000
 python start_ngrok.py
 ```
 
-## 🔧 API Endpoints
-
-### 🏠 Home
-- **URL:** `https://reliably-one-kiwi.ngrok-free.app/`
-- **Method:** GET
-- **Response:** API information
-
-### 🏥 Health Check
-- **URL:** `https://reliably-one-kiwi.ngrok-free.app/health`
-- **Method:** GET
-- **Response:** Service health status
-
-### 📤 Image Upload
-- **URL:** `https://reliably-one-kiwi.ngrok-free.app/api/upload`
-- **Method:** POST
-- **Content-Type:** multipart/form-data
-- **Body:** `image` (file)
-- **Response:**
-```json
-{
-  "result": 0,
-  "confidence": 0.95,
-  "image": "base64_encoded_image",
-  "status": "success"
-}
-```
-
 ## 🛡️ Security Features
 
 - ✅ File type validation (PNG, JPG, JPEG, BMP, GIF)
